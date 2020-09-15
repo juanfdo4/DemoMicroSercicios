@@ -8,10 +8,10 @@ namespace Lil.Search.Models
 {
     public class OrderItem
     {
-        [JsonPropertyName("orderid")]
+        [JsonPropertyName("orderId")]
         public string OrderId { get; set; }
         public int Id{ get; set; }
-        [JsonPropertyName("productoid")]
+        [JsonPropertyName("productoId")]
         public string ProductoId { get; set; }
         public int Quantity { get; set; }
         [JsonPropertyName("price")]

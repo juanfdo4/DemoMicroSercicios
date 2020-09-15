@@ -10,9 +10,9 @@ namespace Lil.Search.Models
     {
         [JsonPropertyName("id")]
         public string id { get; set; }
-        [JsonPropertyName("orderdate")]
+        [JsonPropertyName("orderDate")]
         public DateTime OrderDate { get; set; }
-        [JsonPropertyName("customerid")]
+        [JsonPropertyName("customerId")]
         public string CustomerId { get; set; }
         [JsonPropertyName("total")]
         public double Total { get; set; }

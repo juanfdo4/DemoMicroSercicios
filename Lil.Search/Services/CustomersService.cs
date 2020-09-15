@@ -18,7 +18,7 @@ namespace Lil.Search.Services
         }
         public async Task<Customer> GetAsync(string id)
         {
-            var client = httpClientFactory.CreateClient("customerService");
+                var client = httpClientFactory.CreateClient("customerService");
 
             var response = await client.GetAsync($"api/customers/{id}");
 
