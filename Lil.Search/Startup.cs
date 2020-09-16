@@ -33,10 +33,10 @@ namespace Lil.Search
 
             services.AddControllers();
             services.AddHttpClient("customerService", c => {
-                c.BaseAddress = new Uri(Configuration["Services:Customer"]);
+                c.BaseAddress = new Uri(Configuration["Services:Customers"]);
             });
             services.AddHttpClient("productService", c => {
-                c.BaseAddress = new Uri(Configuration["Services:Product"]);
+                c.BaseAddress = new Uri(Configuration["Services:Products"]);
             });
             services.AddHttpClient("salesService", c => {
                 c.BaseAddress = new Uri(Configuration["Services:Sales"]);
